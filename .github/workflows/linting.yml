@@ -1,4 +1,4 @@
-name: Lint
+name: Linting
 
 on:
   push:
@@ -36,6 +36,6 @@ jobs:
 
       - name: Lint check
         run: |
-          flake8 .
-          black --check .
-          isort --profile black -c .
+          flake8 src tests
+          black src tests
+          isort --check-only --diff --project src tests
