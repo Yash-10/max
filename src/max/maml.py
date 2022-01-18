@@ -1,10 +1,9 @@
 import numpy as np
-from functools import partial
 
 import jax
 from flax import nn, optim
 
-from loss import task_loss
+from max.loss import task_loss
 
 
 @jax.jit
