@@ -1,7 +1,10 @@
+from functools import partial
+
 import jax
 import jax.numpy as jnp
 
 from loss import task_loss
+
 
 @jax.jit
 def train_step(optimizer, batch, fit_task):

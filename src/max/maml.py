@@ -1,5 +1,4 @@
 import numpy as np
-from functools import partial
 
 import jax
 from flax import nn, optim
